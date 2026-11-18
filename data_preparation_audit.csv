@@ -1,0 +1,9 @@
+"measure","value"
+"Source rows",12865
+"After duplicate removal",12861
+"Usable modeling rows",12861
+"Training rows before outlier filtering",10288
+"Training rows after IQR filtering",9764
+"Holdout rows",2573
+"Training IQR lower limit",25000
+"Training IQR upper limit",1185000

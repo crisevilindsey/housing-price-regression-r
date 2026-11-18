@@ -1,0 +1,3 @@
+"model","test_rows","RMSE","MAE","R_squared"
+"Simple linear regression",2573,370848.441506841,203666.42568018,-0.000964620113507175
+"Multiple linear regression",2573,332725.815196785,147135.937801734,0.194252797440776

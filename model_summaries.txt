@@ -1,0 +1,43 @@
+
+Call:
+stats::lm(formula = sale_price ~ sq_ft_lot, data = train_filtered)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-687790 -141989  -14768  130126  587892 
+
+Coefficients:
+             Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 5.927e+05  2.163e+03 273.947  < 2e-16 ***
+sq_ft_lot   2.336e-01  4.522e-02   5.166 2.44e-07 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 195300 on 9762 degrees of freedom
+Multiple R-squared:  0.002726,	Adjusted R-squared:  0.002624 
+F-statistic: 26.69 on 1 and 9762 DF,  p-value: 2.44e-07
+
+
+Call:
+stats::lm(formula = sale_price ~ sq_ft_lot + square_feet_total_living + 
+    bedrooms + bath_full_count + year_built, data = train_filtered)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-1228915   -76458    -4718    77255   844951 
+
+Coefficients:
+                           Estimate Std. Error t value Pr(>|t|)    
+(Intercept)              -2.351e+06  2.100e+05 -11.197  < 2e-16 ***
+sq_ft_lot                -1.936e-01  3.563e-02  -5.434 5.64e-08 ***
+square_feet_total_living  1.393e+02  2.507e+00  55.570  < 2e-16 ***
+bedrooms                  3.496e+02  2.202e+03   0.159    0.874    
+bath_full_count           4.039e+03  2.890e+03   1.398    0.162    
+year_built                1.305e+03  1.060e+02  12.309  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 145100 on 9758 degrees of freedom
+Multiple R-squared:  0.4495,	Adjusted R-squared:  0.4492 
+F-statistic:  1593 on 5 and 9758 DF,  p-value: < 2.2e-16
+
